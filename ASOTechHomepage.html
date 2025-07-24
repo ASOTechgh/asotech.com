@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASO TECH | Portfolio</title>
+
+  <style>
+    /* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts & Colors */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+/* Containers */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header nav {
+  margin-top: 15px;
+}
+
+header nav a {
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #f1c40f;
+}
+
+/* Sections */
+.section {
+  margin: 60px 0;
+}
+
+/* Profile Section */
+.profile-section {
+  padding: 60px 20px;
+  background-color: #f7f9fc;
+  text-align: center;
+}
+
+.profile-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+  border: 5px solid #3498db;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-description {
+  font-size: 1.1rem;
+  color: #34495e;
+  line-height: 1.6;
+}
+
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 3px solid #2980b9;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  list-style: none;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px 0;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards ease-out;
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+.delay-4 { animation-delay: 1.2s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- Heading-->
+<body>
+  <header class="fade-in">
+    <div class="container">
+      <h1>Acheampong Samuel Obese</h1>
+      <p>IT Student | Web Developer | Cybersecurity Enthusiast</p>
+      <nav>
+        <a href="Abtpage.html">About</a>
+        <a href="skllpage.html">Skills</a>
+        <a href="projectpage.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <!--Profile image-->
+  <section id="profile" class="profile-section">
+  <div class="profile-container">
+    <img src="pic.jpg" alt="Portfolio Photo" class="profile-image">
+    <div class="profile-description">
+      <p>
+        Hello! I’m <strong>Acheampong Samuel Obese</strong>, a Level 300 IT student passionate about web development, design, and innovative digital solutions. I enjoy turning creative ideas into real, functional websites that people love to use.
+      </p>
+      <p>
+        Let’s connect!
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--About Me-->
+  <main class="container">
+    <section id="about" class="section fade-in">
+      <h2>About Me</h2>
+      <p>I am a Level 300 IT student passionate about web development, cybersecurity,
+         and emerging technologies. I love learning and building useful solutions with code.</p>
+    </section>
+
+    <!--Skills-->
+    <section id="skills" class="section fade-in delay-1">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, Java</li>
+        <li>SQL, MySQL</li>
+        <li>Cybersecurity Basics</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <!--Project-->
+    <section id="projects" class="section fade-in delay-2">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>A personal website to showcase my work and skills using HTML, CSS and responsive design.</p>
+        </div>
+        <div class="project-card">
+          <h3>Login System (Python)</h3>
+          <p>Developed a basic login and registration system with password encryption and data validation.</p>
+        </div>
+        <div class="project-card">
+          <h3>SQL Injection Simulation</h3>
+          <p>Created a simulated web app for cybersecurity class to demonstrate SQL injection risks and prevention.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact" class="section fade-in delay-3">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="https://formspree.io/f/mvgqkjoz" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!--Footer-->
+  <footer class="fade-in delay-4">
+    <p>&copy; 2025 ASOTech.
